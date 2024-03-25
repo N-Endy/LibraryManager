@@ -1,0 +1,12 @@
+2. *Library System:*
+   - *Features:*
+     - Manage library members, books, and their details.
+     - Allow members to borrow and return books.
+     - Implement a fine system for overdue books.
+
+
+
+
+classes
+- Book
+- Library Member
