@@ -14,12 +14,14 @@ public class BookRepository : IBookRepository
         // Else tell user bok doesn't exist.
     }
 
-    public void GetBook(string bookId)
+    public Book GetBook(string bookId)
     {
         var bookToBeGotten = _books.FirstOrDefault(book => book.BookId == bookId);
         if (bookToBeGotten != null){}
             // Show te book to be displayed
         // Else tell user that BookId is incorrect.
+
+        return bookToBeGotten;
     }
 
     public void UpdateBook(Book book)
