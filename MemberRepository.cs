@@ -11,13 +11,15 @@ public class MemberRepository : IMemberRepository
         var memberToBeDeleted = _members.FirstOrDefault(m => m.MemberId == memberId);
     }
 
-    public void GetMember(string memberId)
+    public Member GetMember(string memberId)
     {
         var memberToBeGotten = _members.FirstOrDefault(m => m.MemberId == memberId);
 
         if (memberToBeGotten != null){}
             // Display the member
         // Else, alert the user that the memberId is incorrect.
+
+        return memberToBeGotten;
     }
 
     public void UpdateMember(Member member)

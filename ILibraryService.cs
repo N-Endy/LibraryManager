@@ -1,6 +1,6 @@
 public interface ILibraryService
 {
-    void BorrowBook();
-    void ReturnBook();
-    void LatenessFine();
+    void BorrowBook(string memberId, string bookId);
+    void ReturnBook(string memberId, string bookId);
+    void CalculateFine(string memberId);
 }
