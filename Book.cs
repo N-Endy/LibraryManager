@@ -1,3 +1,4 @@
+/* The class "Book" represents a book entity with properties */
 public class Book
 {
     public string BookId { get; set; }
