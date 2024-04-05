@@ -33,8 +33,6 @@ public class BookRepository : IBookRepository
             bookToBeUpdated.BookId = book.BookId;
             bookToBeUpdated.Title = book.Title;
             bookToBeUpdated.Author = book.Author;
-            bookToBeUpdated.Genre = book.Genre;
-            bookToBeUpdated.Description = book.Description;
             bookToBeUpdated.IsAvailable = book.IsAvailable;
             bookToBeUpdated.DueDate = book.DueDate;
         }

@@ -3,6 +3,8 @@ public class LibraryManager
     private readonly ILibraryService _libraryService;
     private readonly ILibraryUserInteraction _libraryUserInteraction;
     private readonly IMemberRepository _memberRepository;
+    private readonly IBookRepository _bookRepository;
+
 
     public LibraryManager(ILibraryService libraryService, ILibraryUserInteraction libraryUserInteraction, IMemberRepository memberRepository)
     {
@@ -32,7 +34,8 @@ public class LibraryManager
                 _memberRepository.UpdateMember(updateMember);
                 break;
             case "4":
-                _libraryUserInteraction.ShowMessage("\nThis update is coming soon.");
+                Book updateBook = _libraryUserInteraction.CreateBook();
+                _bookRepository.UpdateBook(updateBook);
                 break;
             case "6":
                 _libraryUserInteraction.Exit();
